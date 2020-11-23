@@ -13,9 +13,9 @@
 				<img src="Projet2/images/logo/Reservia@3x.png" id="logo" alt="logo">
 				<nav>
 						<ul>
-							<li>Hébergements</li>
+							<div class="hebergements"><li>Hébergements</li></div>
 							<li>Activités </li>
-							<class="inscrire"><li>S'inscrire</li></class>
+							<div class="inscrire"><li>S'inscrire</li></div>
 						</ul>
 				</nav>
 				
@@ -23,7 +23,7 @@
 				<p>En plein centre ville ou en pleine nature</p>
 					<i class="fas fa-map-marker-alt fa-1x circle-icon"></i>
 					<label for="recherche"></label>
-					<input type="search" id="recherche" name="q">
+					<input type="search" id="recherche" name="q" placeholder="Marseille, France">
 					<button id="sbutton">Rechercher</button>
 				<div class="filtres">
 					<p>Filtres</p>
@@ -111,30 +111,34 @@
 			<section>
 				<div id="activites"	>
 				<h2>Activités à Marseille</h2>
-					<figure class="grandecase">
-						<img src="Projet2/images/activites/4_small/vieuxport.jpg" alt="vieux port">
-						<p><strong>Vieux port</strong></p>
-					</figure>
-					<figure class="petitecase">
-						<img src="Projet2/images/activites/4_small/fortdepomegues.jpg" alt="fort pomègues">
-						<p><strong>Fort de Pomègues</strong></p>
-					</figure>
-					<figure class="petitecase">
-						<img src="Projet2/images/activites/4_small/ilesfrioul.jpg" alt="îles frioul">
-						<p><strong>Îles du frioul</strong></p>
-					</figure>
-					<figure class="grandecase">
-						<img src="Projet2/images/activites/4_small/calanques.jpg" alt="parc calanques">
-						<p><strong>Parc National des Calanques</strong></p>
-					</figure>
-					<figure class="petitecase">
-						<img src="Projet2/images/activites/4_small/notredamedelagarde.jpg" alt="dame de la garde">
-						<p><strong>Notre-Dame-de-la-Garde</strong></p>
-					</figure>
-					<figure class="petitecase">
-						<img src="Projet2/images/activites/4_small/parclongchamp.jpg" alt="parc longchamp">
-						<p><strong>Parc Longchamp</strong></p>
-					</figure>
+					<div class="activites1">
+						<figure class="bigcase">
+							<img src="Projet2/images/activites/4_small/vieuxport.jpg" alt="vieux port">
+							<p><strong>Vieux port</strong></p>
+						</figure></div>
+					<div class="activites2">
+						<figure class="smallcase">
+							<img src="Projet2/images/activites/4_small/fortdepomegues.jpg" alt="fort pomègues">
+							<p><strong>Fort de Pomègues</strong></p>
+						</figure>
+						<figure class="smallcase">
+							<img src="Projet2/images/activites/4_small/ilesfrioul.jpg" alt="îles frioul">
+							<p><strong>Îles du frioul</strong></p>
+						</figure></div>
+					<div class="activites3">
+						<figure class="bigcase">
+							<img src="Projet2/images/activites/4_small/calanques.jpg" alt="parc calanques">
+							<p><strong>Parc National des Calanques</strong></p>
+						</figure></div>
+					<div class="activites4">
+						<figure class="smallcase">
+							<img src="Projet2/images/activites/4_small/notredamedelagarde.jpg" alt="dame de la garde">
+							<p><strong>Notre-Dame-de-la-Garde</strong></p>
+						</figure>
+						<figure class="smallcase">
+							<img src="Projet2/images/activites/4_small/parclongchamp.jpg" alt="parc longchamp">
+							<p><strong>Parc Longchamp</strong></p>
+						</figure></div>
 				</div>
 			</section>
 			<footer>
