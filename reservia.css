@@ -24,9 +24,22 @@ nav li{
 	padding: 22px 18px;
 	height: 61px;
 	font-size: 14px;
-	border-left-color: transparent;
-	border-bottom-color: transparent;
-    border-top: none;
+}
+.inscrire{
+    color: #0065FC;
+    font-weight: bold;
+}
+.hebergements{
+    color: #0065FC;
+    border-top: solid;
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+}
+.filtres{
+    display: flex;
+    margin: 20px 0px 20px 0px;
 }
 button{
     border-radius: 15px;
@@ -34,17 +47,22 @@ button{
     font-weight: bold;
     background-color: white;
     border: 1px solid #CACACA;
+    margin: 5px;
 }
 #recherche{
-    height: 28px;
+    height: 38px;
+    margin: -4px;
 }
  .circle-icon{
-    background:lightgrey;
+    background:#92BBDE;
     padding: 7px;
     border-radius: 65%;
 }
 .fa-map-marker-alt{
-    border-radius: 15px 0px 0px 15px;  
+    border-radius: 15px 0px 0px 15px; 
+}
+.fa-1x{
+    font-size: 0.9em;
 }
 .fa-money-bill-wave, .fa-child, .fa-heart, .fa-dog, .fa-star, .fa-map-marker-alt .fa-info-circle{
     color: #0065FC;
@@ -59,7 +77,12 @@ button{
     text-decoration: none;
     display: inline-block;
     border-radius: 0px 15px 15px 0px;
-    height: 28px;
+    height: 38px;
+    margin: 0px;
+    width: 88px;
+}
+h1{
+    font-size: 170%;
 }
 .case {
     width: 26%;
@@ -99,7 +122,8 @@ aside{
     border-radius: 2%;
     width: 30%;
     padding: 1%;
-    margin: 2%;
+    margin: 0%;
+    margin-left: 2%;
 }
 .sidecase{
     width: 80%;
@@ -156,29 +180,54 @@ figure{
     position: relative;
 }
 p{
-    margin-left: 10px;
-}
-.inscrire{
-    color: #0065FC;
-    font-weight: bold;
-}
-.hebergements{
-    color: #0065FC;
-}
-#recherche{
-    padding: 0px;
-    border: 0px;
-    margin: 0px;
+    margin: 10px;
 }
 .activites1, .activites2, .activites3, .activites4{
     margin: 20px;
 }
 
-@media all and (max-device-width: 480px){
+@media all and (max-width: 1024px){
 
-body{
+#blocpage{
     display: flex;
     flex-direction: column;
+}
+#logo{
+    height: 50%;
+    width: 50%;
+}
+.blocdefin{
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+}
+section{
+    display: flex;
+    flex-direction: column-reverse;
+}
+aside{
+    width: 100%;
+}
+article{
+    width:100%;
+}
+.case{
+    width: 80%;
+    max-height: 350px;
+}
+#activites{
+    display: flex; 
+    flex-direction: column;
+}
+.smallcase, .bigcase{
+    width: 80%;
+}
+.activites2, .activites4{
+    margin: 20px;
+}
+.filtres{
+    display: flex;
+    flex-wrap: wrap;
 }
 
 
