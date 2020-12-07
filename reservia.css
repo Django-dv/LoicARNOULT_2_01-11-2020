@@ -33,7 +33,7 @@ nav li{
     color: #0065FC;
     border-top: solid;
 }
-.top{
+header{
     display: flex;
     justify-content: space-between;
 }
@@ -50,7 +50,7 @@ button{
     margin: 5px;
 }
 #recherche{
-    height: 38px;
+    height: 30px;
     margin: -4px;
 }
  .circle-icon{
@@ -77,7 +77,7 @@ button{
     text-decoration: none;
     display: inline-block;
     border-radius: 0px 15px 15px 0px;
-    height: 38px;
+    height: 30px;
     margin: 0px;
     width: 88px;
 }
@@ -94,7 +94,7 @@ h1{
     padding: 5px;
     flex-direction: column;   
 }
-.blocdefin {
+footer{
     background-color:#F2F2F2;
     display: flex;
     flex-flow: wrap row;
@@ -147,14 +147,15 @@ img{
 section{
     display:flex;
 }
-.bigcase{
+.largecase{
    display: flex;
     border-radius: 5%;
     background-color: white;
     box-sizing: border-box;
     padding: 5px;
     flex-direction: column;
-    width: 100%;
+    overflow: hidden;
+    width: max-content;
     border:1px #c2c2c2 solid;
     padding:0;
     box-shadow: 0px 2px 12px darkgray;
@@ -182,11 +183,14 @@ figure{
 p{
     margin: 10px;
 }
-.activites1, .activites2, .activites3, .activites4{
+.activites2, .activites4, .largecase{
     margin: 20px;
+    display: flex;
+    flex-direction: column;
+    width: ;
 }
 
-@media all and (max-width: 1024px){
+@media all and (max-width: 720px){
 
 #blocpage{
     display: flex;
@@ -196,7 +200,7 @@ p{
     height: 50%;
     width: 50%;
 }
-.blocdefin{
+footer{
     display: flex;
     flex-direction: column;
     padding-left: 30px;
@@ -222,19 +226,38 @@ article{
 .smallcase, .bigcase{
     width: 80%;
 }
-.activites2, .activites4{
+.activites2, .activites4,{
     margin: 20px;
 }
 .filtres{
     display: flex;
     flex-wrap: wrap;
 }
+}
+@media all and (min-width:720px) and (max-width: 1440px){
+
+#blocpage{
+    
+}
+#logo{
+    height: 10%;
+    width: 10%;
+}
+#activites{
+    display: flex;
+}
+
+
+
+
+
+
+
 
 
 
 
 }
-
 
 
 
