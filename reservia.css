@@ -18,6 +18,7 @@ ul{
     display: flex;
     justify-content: flex-end;
     margin:0;
+    padding:0;
 }
 nav li{
 	list-style: none;
@@ -28,10 +29,19 @@ nav li{
 .inscrire{
     color: #0065FC;
     font-weight: bold;
+    border-top: white solid;
 }
 .hebergements{
     color: #0065FC;
     border-top: solid;
+}
+.activite{
+    border-top: white solid;
+}
+a{
+    outline: none;
+    text-decoration: none;
+    color: none;
 }
 header{
     display: flex;
@@ -81,6 +91,9 @@ button{
     margin: 0px;
     width: 88px;
 }
+button:hover{
+    background-color:#E78824;
+}
 h1{
     font-size: 170%;
 }
@@ -101,7 +114,7 @@ footer{
     align-items: flex-start;
     justify-content: space-around;
 }
-.titreh{
+#titreh{
     display: flex;
     margin-right: 55%;
 }
@@ -135,6 +148,13 @@ aside{
     padding: 5px;
     flex-direction: row; 
 }
+.fa-chart-line{
+    margin-left: 55%;
+}
+.imgpop{
+    height: 100%;
+    max-width: 55%;
+}
 #activites{
     width: 100%;
     display: flex;
@@ -142,7 +162,9 @@ aside{
 img{
     border-radius: 5%;
     width: 100%;
+    height: 400px;
     overflow: hidden;
+    background-size: cover;
 }
 section{
     display:flex;
@@ -155,11 +177,11 @@ section{
     padding: 5px;
     flex-direction: column;
     overflow: hidden;
-    width: max-content;
     border:1px #c2c2c2 solid;
     padding:0;
     box-shadow: 0px 2px 12px darkgray;
-    height: fit-content;
+    width: 50%;
+    height: 550px;
 }
 .smallcase{
     display: flex;
@@ -168,11 +190,16 @@ section{
     box-sizing: border-box;
     padding: 5px;
     flex-direction: column;
-    width: 40%;
+    width: 90%;
     border:1px #c2c2c2 solid;
     padding:0;
     box-shadow: 0px 2px 12px darkgray;
     height: fit-content;
+    margin-right: 10px;
+    height: 250px;
+}
+.imglarge{
+    height: 500px;
 }
 .fas .fa-star{
  color: #0065FC;
@@ -189,8 +216,12 @@ p{
     flex-direction: column;
     width: ;
 }
+#act{
+    display: flex;
+    flex-direction: column;
+}
 
-@media all and (max-width: 720px){
+@media all and (min-width: 320px) and (max-width: 530px){
 
 #blocpage{
     display: flex;
@@ -198,22 +229,49 @@ p{
 }
 #logo{
     height: 50%;
-    width: 50%;
+    width: 100px;
 }
-footer{
+header{
     display: flex;
     flex-direction: column;
-    padding-left: 30px;
+    justify-content: space-between;
+}
+.hebergements, .inscrire, .activite{
+    border: solid 0px;
+}
+nav{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+#search{
+    width: 10%;
 }
 section{
     display: flex;
     flex-direction: column-reverse;
 }
+.fa-chart-line{
+    margin: 0%;
+}
+.imgpop{
+    height: 115px;
+    max-width: 100px;
+}
+.top{
+   position: relative;
+}
 aside{
     width: 100%;
+    margin: 20px;
+}
+.sidecase{
+    margin: 10px;
+    width: 90%;
 }
 article{
     width:100%;
+    margin: 20px;
 }
 .case{
     width: 80%;
@@ -223,8 +281,17 @@ article{
     display: flex; 
     flex-direction: column;
 }
-.smallcase, .bigcase{
+.smallcase{
+    width: 90%;
+    height: 20%;
+}
+.largecase{
     width: 80%;
+    height: 100%;
+    margin-left: 60px;
+}
+.imglarge{
+    height:100%;
 }
 .activites2, .activites4,{
     margin: 20px;
@@ -233,11 +300,22 @@ article{
     display: flex;
     flex-wrap: wrap;
 }
+img{
+   width: 100%;
+   height: 150px;
 }
-@media all and (min-width:720px) and (max-width: 1440px){
+footer{
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    margin-left: 10px;
+    width: 100%;
+}
+}
+@media all and (min-width:1024px) and (max-width: 1440px){
 
 #blocpage{
-    
+    margin:10px;
 }
 #logo{
     height: 10%;
@@ -245,19 +323,58 @@ article{
 }
 #activites{
     display: flex;
+    flex-direction: column;
+    margin: 20px;
 }
-
-
-
-
-
-
-
-
-
+section{
+    display: flex;
+    flex-direction: column;
+}
+article{
+    width: 100%;
+    margin: 20px;
+}
+.case{
+    width: 25%;
+    height: 270px;
+}
+aside{
+    width: 95%;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.sidecase{
+    width: 22%;
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+}
+.fa-chart-line{
+    margin-left: 5%;
+}
+.titreh{
+    width: 90%;
+}
+h2{
+    height: 20px;
+}
+.imgpop{
+    width: 100px;
+}
+#activites{
+    display: flex;
+    flex-direction: row;
+}
+.largecase, .smallcase{
+    height: 200px;
+    width: 200px;
+}
+}
+@media all and (min-width: 531px) and (max-width: 1009px){
 
 
 }
+@media all and (min-width: 1440px) and (max-width: 1700px){
 
 
-
+}
