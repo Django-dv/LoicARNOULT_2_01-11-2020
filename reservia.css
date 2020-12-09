@@ -61,7 +61,10 @@ button{
 }
 #recherche{
     height: 30px;
-    margin: -4px;
+    margin: -5px;
+}
+.fa-search{
+    visibility: hidden;
 }
  .circle-icon{
     background:#92BBDE;
@@ -90,6 +93,21 @@ button{
     height: 30px;
     margin: 0px;
     width: 88px;
+}
+#abutton{
+    padding-left: 0.5%;
+    background-color: #0065FC; 
+    border: none;
+    color: white;
+    padding: 5px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 0px 15px 15px 0px;
+    height: 30px;
+    margin: 0px;
+    width: 88px;
+    visibility: hidden;
 }
 button:hover{
     background-color:#E78824;
@@ -149,7 +167,7 @@ aside{
     flex-direction: row; 
 }
 .fa-chart-line{
-    margin-left: 55%;
+    margin-left: 30%;
 }
 .imgpop{
     height: 100%;
@@ -230,14 +248,37 @@ p{
 #logo{
     height: 50%;
     width: 100px;
+    grid-area: #logo;
 }
 header{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 50px 50px 50px 50px;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "logo . . inscrire"
+        " hebergements . . activite";
+}
+.inscrire{
+    grid-area: .inscrire;
+}
+.hebergements{
+    grid-area: .hebergements;
+}
+.activite{
+    grid-area: .activite;
 }
 .hebergements, .inscrire, .activite{
     border: solid 0px;
+}
+.fa-search{
+    visibility: visible;
+}
+#sbutton{
+    display: none;
+}
+#abutton{
+    visibility: visible;
+    width: 15%;
 }
 nav{
     display: flex;
@@ -339,7 +380,7 @@ article{
     height: 270px;
 }
 aside{
-    width: 95%;
+    width: 100%;
     flex-direction: row;
     flex-wrap: wrap;
 }
@@ -359,20 +400,69 @@ h2{
     height: 20px;
 }
 .imgpop{
-    width: 100px;
+    width: 100%;
+    max-width: 100%;
 }
 #activites{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 100px;
 }
 .largecase, .smallcase{
     height: 200px;
-    width: 200px;
+    width: 20%;
+}
+.largecase{
+    margin-top: 4%;
+}
+.activites2, .activites4{
+    flex-direction:row ;
 }
 }
-@media all and (min-width: 531px) and (max-width: 1009px){
+@media all and (min-width: 531px) and (max-width: 1023px){
 
-
+#logo{
+    width: 12%;
+}
+section{
+    display: flex;
+    flex-direction: column;
+}
+article{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.case{
+   height: 250px;
+   width: 20%;
+}
+img, .imglarge{
+    height: 150px;
+}
+.imgpop{
+    height: 200px;
+}
+aside{
+    margin: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+#activites, .activites4, .activites2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.largecase, .smallcase{
+    height: 180px;
+    width: 180px;
+}
+.largecase{
+    margin-top: 36px;
+}
 }
 @media all and (min-width: 1440px) and (max-width: 1700px){
 
