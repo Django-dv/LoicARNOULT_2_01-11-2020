@@ -41,7 +41,6 @@ nav li{
 a{
     outline: none;
     text-decoration: none;
-    color: none;
 }
 header{
     display: flex;
@@ -232,7 +231,6 @@ p{
     margin: 20px;
     display: flex;
     flex-direction: column;
-    width: ;
 }
 #act{
     display: flex;
@@ -248,7 +246,6 @@ p{
 #logo{
     height: 50%;
     width: 100px;
-    grid-area: #logo;
 }
 header{
     display: grid;
@@ -257,15 +254,6 @@ header{
     grid-template-areas: 
         "logo . . inscrire"
         " hebergements . . activite";
-}
-.inscrire{
-    grid-area: .inscrire;
-}
-.hebergements{
-    grid-area: .hebergements;
-}
-.activite{
-    grid-area: .activite;
 }
 .hebergements, .inscrire, .activite{
     border: solid 0px;
@@ -334,7 +322,7 @@ article{
 .imglarge{
     height:100%;
 }
-.activites2, .activites4,{
+.activites2, .activites4{
     margin: 20px;
 }
 .filtres{
